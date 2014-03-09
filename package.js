@@ -4,6 +4,7 @@ Package.describe({
 
 Npm.depends({
   temp: "0.6.0"
+  "stream-stream": "1.2.6"
 });
 
 Package.on_use(function(api) {
