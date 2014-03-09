@@ -189,7 +189,7 @@ FS.TempStore = {
 
     existing.rewind();
 
-    // Create a "stream of streams" which will concatinate the input streams in-order in the output
+    // Create a "stream of streams" which will concatinate the input streams in order in the output
     existing.forEach(function(chunk) {
       stream.write(fs.createReadStream(chunk.tempFile));
     });
@@ -197,7 +197,7 @@ FS.TempStore = {
 
     fileObj.stream = stream;
 
-    callback(null);
+    callback(null, fileObj);
 
   }
 };
