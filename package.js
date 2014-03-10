@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Npm.depends({
-  temp: "0.6.0"
+  temp: "0.6.0",
   "stream-stream": "1.2.6"
 });
 
